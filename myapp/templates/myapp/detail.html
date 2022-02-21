@@ -22,13 +22,12 @@
 
         <div class="row">
             <div class="col">
-                <img src="https://media.istockphoto.com/photos/closeup-of-a-keyboard-with-the-russian-alphabet-for-the-blind-braille-picture-id1320147921?b=1&k=20&m=1320147921&s=170667a&w=0&h=1HV_gNfMTqHlUdNP37ryrSElSavF8t5funySffSte-g="
-                    alt="">
+                <img src="{{ item.image }}" alt="{{ item.name }}">
             </div>
             <div class="col">
-                <h2>Name</h2>
-                <h4>Amount</h4>
-                <span>Created</span>
+                <h2>{{ item.name }}</h2>
+                <h4>Amount: {{ item.amount }}</h4>
+                <span>Date added: {{ item.created }}</span>
             </div>
         </div>
     </div>
